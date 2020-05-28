@@ -1,0 +1,22 @@
+$fontSize: 0px;
+$num: 100;
+
+h1 {
+  font-size: 80px;
+}
+
+main {
+  font-size: $fontSize;
+  margin: $num + 90px;
+}
+
+nav {
+  ul {
+    li {
+      display: inline-block;
+      width: 100px;
+      height: 30px;
+      background-color: rgb(243, 10, 10);
+    }
+  }
+}

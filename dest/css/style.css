@@ -1,0 +1,12 @@
+h1 {
+  font-size: 80px; }
+
+main {
+  font-size: 0px;
+  margin: 190px; }
+
+nav ul li {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  background-color: #f30a0a; }
