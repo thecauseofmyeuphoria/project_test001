@@ -60,7 +60,7 @@ gulp.task("watch_sass_copyHtml", function () {
 // html 樣板
 gulp.task("fileinclude", function () {
   gulp
-    .src(["*.html"])
+    .src(["./dev/*.html"])
     .pipe(
       fileinclude({
         prefix: "@@",
@@ -83,8 +83,10 @@ gulp.task("default", function () {
       index: "index.html",
     },
   });
-  gulp.watch("./sass/*.scss", ["sass"]).on("change", reload);
-  gulp.watch(["./*.html", "./**/*.html"], ["fileinclude"]).on("change", reload);
+  gulp.watch("./dev/sass/*.scss", ["sass"]).on("change", reload);
+  gulp
+    .watch(["./dev/*.html", "./dev/**/*.html"], ["fileinclude"])
+    .on("change", reload);
 });
 
 //ftp
